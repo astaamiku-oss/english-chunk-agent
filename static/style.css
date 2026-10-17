@@ -191,3 +191,19 @@ footer{padding:20px 22px 30px;flex-direction:column;gap:7px;font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* Focused practice: independent stage motion keeps the response easy to follow. */
+.exercise-enter{animation:exercise-enter .46s cubic-bezier(.22,1,.36,1) both}
+@keyframes exercise-enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.stage-meta{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#85858e;margin:8px 0 12px;font-variant-numeric:tabular-nums}
+.stage-meta b{font-weight:500;color:#171719}
+.stage-track{height:3px;background:#e8e8ec;border-radius:3px;overflow:hidden;margin-bottom:32px}
+.stage-track span{display:block;height:100%;background:#171719;transform-origin:left;transform:scaleX(calc(var(--stage)/3));transition:transform .6s var(--ease)}
+.answer-caption{display:block;font:10px -apple-system,BlinkMacSystemFont,sans-serif;color:#85858e;margin-bottom:16px;letter-spacing:.05em}
+.exercise .answer-card{background:white;color:#171719;border-color:var(--line);animation:exercise-enter .42s var(--ease);overflow-wrap:anywhere}
+.answer-card:focus{outline:none}
+.gesture-hint{display:none;font-size:10px;color:#85858e;margin-top:18px}
+button,a{touch-action:manipulation}
+@media(pointer:coarse){.gesture-hint{display:block}.exercise{touch-action:pan-y}}
+@media(max-width:600px){.exercise{padding-top:55px}.stage-meta{font-size:10px}.stage-track{margin-bottom:24px}.exercise .prompt{margin-top:16px}.exercise .notes{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){.exercise-enter,.exercise .answer-card{animation:none}.stage-track span{transition:none}}
