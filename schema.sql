@@ -1,0 +1,12 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS words(id INTEGER PRIMARY KEY, lemma TEXT NOT NULL UNIQUE COLLATE NOCASE, ipa TEXT NOT NULL DEFAULT '', frequency_rank INTEGER, priority INTEGER DEFAULT 1, reviewed INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS word_senses(id INTEGER PRIMARY KEY, word_id INTEGER NOT NULL REFERENCES words(id), pos TEXT NOT NULL, definition_en TEXT NOT NULL, definition_zh TEXT NOT NULL, sense_rank INTEGER NOT NULL DEFAULT 1, source TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS chunks(id INTEGER PRIMARY KEY, expression TEXT NOT NULL UNIQUE COLLATE NOCASE, meaning_zh TEXT NOT NULL, pattern TEXT NOT NULL, slots TEXT NOT NULL DEFAULT '[]', usage_notes TEXT NOT NULL DEFAULT '', version INTEGER NOT NULL DEFAULT 1, updated_at TEXT NOT NULL, source TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS chunk_senses(chunk_id INTEGER REFERENCES chunks(id), sense_id INTEGER REFERENCES word_senses(id), role TEXT NOT NULL DEFAULT 'core', PRIMARY KEY(chunk_id,sense_id));
+CREATE TABLE IF NOT EXISTS intents(id INTEGER PRIMARY KEY, name TEXT UNIQUE NOT NULL, description TEXT DEFAULT '');
+CREATE TABLE IF NOT EXISTS scenarios(id INTEGER PRIMARY KEY, name TEXT UNIQUE NOT NULL, description TEXT DEFAULT '');
+CREATE TABLE IF NOT EXISTS chunk_contexts(id INTEGER PRIMARY KEY, chunk_id INTEGER NOT NULL REFERENCES chunks(id), intent_id INTEGER NOT NULL REFERENCES intents(id), scenario_id INTEGER NOT NULL REFERENCES scenarios(id), example TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS learning_progress(user_id TEXT NOT NULL, item_type TEXT NOT NULL CHECK(item_type IN ('word','sense','chunk')), item_id INTEGER NOT NULL, recognition INTEGER, listening INTEGER, construction INTEGER, retrieval INTEGER, repetitions INTEGER NOT NULL DEFAULT 0, interval_days REAL NOT NULL DEFAULT 0, next_review TEXT NOT NULL, updated_at TEXT NOT NULL, PRIMARY KEY(user_id,item_type,item_id));
+CREATE TABLE IF NOT EXISTS practice_events(id INTEGER PRIMARY KEY, user_id TEXT NOT NULL, item_type TEXT NOT NULL, item_id INTEGER NOT NULL, ability TEXT NOT NULL, grade INTEGER NOT NULL CHECK(grade BETWEEN 0 AND 3), answer TEXT NOT NULL, error TEXT NOT NULL, created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS audit_log(id INTEGER PRIMARY KEY, entity TEXT NOT NULL, item_id INTEGER NOT NULL, source TEXT NOT NULL, before_json TEXT, after_json TEXT NOT NULL, version INTEGER NOT NULL, created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS progress_due ON learning_progress(user_id,next_review);

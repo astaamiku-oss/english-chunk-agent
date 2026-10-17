@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs and local runtime files
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.sqlite*-*
+*.pid
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+
+# Credentials and local agent configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.codex/
+.agents/
+credentials*
+secrets*
+
+# Local conversation history
+conversation.md
