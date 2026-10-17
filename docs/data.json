@@ -1,0 +1,1670 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "lemma": "get",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 1,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "understand",
+          "definition_zh": "理解",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 21,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "receive",
+          "definition_zh": "获得",
+          "sense_rank": 2,
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 22,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "become",
+          "definition_zh": "变得",
+          "sense_rank": 2,
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 23,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "arrive",
+          "definition_zh": "到达",
+          "sense_rank": 2,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 1,
+          "expression": "I get it.",
+          "meaning_zh": "我明白了。",
+          "pattern": "I get {thing}.",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 21,
+          "expression": "get a message",
+          "meaning_zh": "收到消息",
+          "pattern": "get a message",
+          "slots": "[]",
+          "usage_notes": "",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 22,
+          "expression": "get better",
+          "meaning_zh": "变好",
+          "pattern": "get better",
+          "slots": "[]",
+          "usage_notes": "",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 23,
+          "expression": "get there",
+          "meaning_zh": "到达那里",
+          "pattern": "get there",
+          "slots": "[]",
+          "usage_notes": "",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lemma": "make",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 2,
+          "word_id": 2,
+          "pos": "v",
+          "definition_en": "cause something to happen",
+          "definition_zh": "使得",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 2,
+          "expression": "That makes sense.",
+          "meaning_zh": "这有道理。",
+          "pattern": "{thing} makes sense.",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 3,
+          "expression": "It makes sense to me.",
+          "meaning_zh": "我觉得有道理。",
+          "pattern": "It makes sense to {person}.",
+          "slots": "[\"person\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lemma": "sense",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 3,
+          "word_id": 3,
+          "pos": "n",
+          "definition_en": "a reasonable meaning",
+          "definition_zh": "道理",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 2,
+          "expression": "That makes sense.",
+          "meaning_zh": "这有道理。",
+          "pattern": "{thing} makes sense.",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        },
+        {
+          "id": 3,
+          "expression": "It makes sense to me.",
+          "meaning_zh": "我觉得有道理。",
+          "pattern": "It makes sense to {person}.",
+          "slots": "[\"person\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "lemma": "take",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 4,
+          "word_id": 4,
+          "pos": "v",
+          "definition_en": "use an amount of time",
+          "definition_zh": "花费",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 4,
+          "expression": "Take your time.",
+          "meaning_zh": "慢慢来。",
+          "pattern": "Take your time.",
+          "slots": "[]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "lemma": "give",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 5,
+          "word_id": 5,
+          "pos": "v",
+          "definition_en": "provide something",
+          "definition_zh": "给予",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 5,
+          "expression": "Give me a minute.",
+          "meaning_zh": "给我一分钟。",
+          "pattern": "Give {person} {time}.",
+          "slots": "[\"person\", \"time\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "lemma": "go",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 6,
+          "word_id": 6,
+          "pos": "v",
+          "definition_en": "move to a place",
+          "definition_zh": "去",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 6,
+          "expression": "Let’s go.",
+          "meaning_zh": "我们走吧。",
+          "pattern": "Let’s go {place}.",
+          "slots": "[\"place\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "lemma": "come",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 7,
+          "word_id": 7,
+          "pos": "v",
+          "definition_en": "move toward someone",
+          "definition_zh": "来",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 7,
+          "expression": "Come with me.",
+          "meaning_zh": "跟我来。",
+          "pattern": "Come with {person}.",
+          "slots": "[\"person\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "lemma": "know",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 8,
+          "word_id": 8,
+          "pos": "v",
+          "definition_en": "have information",
+          "definition_zh": "知道",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 8,
+          "expression": "I don’t know yet.",
+          "meaning_zh": "我还不知道。",
+          "pattern": "I don’t know {detail} yet.",
+          "slots": "[\"detail\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "lemma": "think",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 9,
+          "word_id": 9,
+          "pos": "v",
+          "definition_en": "have an opinion",
+          "definition_zh": "认为",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 9,
+          "expression": "I think so.",
+          "meaning_zh": "我想是的。",
+          "pattern": "I think {clause}.",
+          "slots": "[\"clause\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "lemma": "want",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 10,
+          "word_id": 10,
+          "pos": "v",
+          "definition_en": "wish for something",
+          "definition_zh": "想要",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 10,
+          "expression": "I want to try.",
+          "meaning_zh": "我想试试。",
+          "pattern": "I want to {verb}.",
+          "slots": "[\"verb\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "lemma": "need",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 11,
+          "word_id": 11,
+          "pos": "v",
+          "definition_en": "require something",
+          "definition_zh": "需要",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 11,
+          "expression": "I need some help.",
+          "meaning_zh": "我需要一些帮助。",
+          "pattern": "I need {thing}.",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "lemma": "work",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 12,
+          "word_id": 12,
+          "pos": "v",
+          "definition_en": "spend effort on a task",
+          "definition_zh": "处理；工作",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 12,
+          "expression": "I’m working on it.",
+          "meaning_zh": "我正在处理。",
+          "pattern": "I’m working on {task}.",
+          "slots": "[\"task\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "lemma": "help",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 13,
+          "word_id": 13,
+          "pos": "v",
+          "definition_en": "make something easier",
+          "definition_zh": "帮助",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 13,
+          "expression": "Could you help me?",
+          "meaning_zh": "你能帮我吗？",
+          "pattern": "Could you help me with {thing}?",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "lemma": "time",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 14,
+          "word_id": 14,
+          "pos": "n",
+          "definition_en": "a period available",
+          "definition_zh": "时间",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 14,
+          "expression": "Do you have time?",
+          "meaning_zh": "你有时间吗？",
+          "pattern": "Do you have time to {verb}?",
+          "slots": "[\"verb\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "lemma": "good",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 15,
+          "word_id": 15,
+          "pos": "adj",
+          "definition_en": "of high quality",
+          "definition_zh": "好的",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 15,
+          "expression": "That sounds good.",
+          "meaning_zh": "听起来不错。",
+          "pattern": "{idea} sounds good.",
+          "slots": "[\"idea\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "lemma": "sure",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 16,
+          "word_id": 16,
+          "pos": "adj",
+          "definition_en": "certain",
+          "definition_zh": "确定的",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 16,
+          "expression": "I’m not sure.",
+          "meaning_zh": "我不确定。",
+          "pattern": "I’m not sure if {clause}.",
+          "slots": "[\"clause\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "lemma": "mean",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 17,
+          "word_id": 17,
+          "pos": "v",
+          "definition_en": "intend to express",
+          "definition_zh": "意思是",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 17,
+          "expression": "What do you mean?",
+          "meaning_zh": "你是什么意思？",
+          "pattern": "What do you mean by {thing}?",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "lemma": "say",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 18,
+          "word_id": 18,
+          "pos": "v",
+          "definition_en": "express in words",
+          "definition_zh": "说",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 18,
+          "expression": "What I’m trying to say is…",
+          "meaning_zh": "我想说的是……",
+          "pattern": "What I’m trying to say is {clause}.",
+          "slots": "[\"clause\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "lemma": "look",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 19,
+          "word_id": 19,
+          "pos": "v",
+          "definition_en": "direct attention",
+          "definition_zh": "看",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 19,
+          "expression": "Let me look.",
+          "meaning_zh": "让我看看。",
+          "pattern": "Let me look at {thing}.",
+          "slots": "[\"thing\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "lemma": "feel",
+      "ipa": "",
+      "frequency_rank": null,
+      "priority": 1,
+      "reviewed": 0,
+      "senses": [
+        {
+          "id": 20,
+          "word_id": 20,
+          "pos": "v",
+          "definition_en": "experience an emotion or state",
+          "definition_zh": "感觉",
+          "sense_rank": 1,
+          "source": "原创示例，待审核"
+        }
+      ],
+      "chunks": [
+        {
+          "id": 20,
+          "expression": "I feel better.",
+          "meaning_zh": "我感觉好些了。",
+          "pattern": "I feel {adjective}.",
+          "slots": "[\"adjective\"]",
+          "usage_notes": "按例句理解语境；替换时注意语法。",
+          "version": 1,
+          "updated_at": "2026-10-17T17:56:36+00:00",
+          "source": "原创示例，待审核"
+        }
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "id": 1,
+      "expression": "I get it.",
+      "meaning_zh": "我明白了。",
+      "pattern": "I get {thing}.",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 1,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "understand",
+          "definition_zh": "理解",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "get",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 1,
+          "chunk_id": 1,
+          "intent_id": 1,
+          "scenario_id": 1,
+          "example": "I get what you mean.",
+          "intent": "确认理解",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "expression": "That makes sense.",
+      "meaning_zh": "这有道理。",
+      "pattern": "{thing} makes sense.",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 2,
+          "word_id": 2,
+          "pos": "v",
+          "definition_en": "cause something to happen",
+          "definition_zh": "使得",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "make",
+          "role": "core"
+        },
+        {
+          "id": 3,
+          "word_id": 3,
+          "pos": "n",
+          "definition_en": "a reasonable meaning",
+          "definition_zh": "道理",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "sense",
+          "role": "support"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 2,
+          "chunk_id": 2,
+          "intent_id": 2,
+          "scenario_id": 2,
+          "example": "Your plan makes sense.",
+          "intent": "表示同意",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "expression": "It makes sense to me.",
+      "meaning_zh": "我觉得有道理。",
+      "pattern": "It makes sense to {person}.",
+      "slots": [
+        "person"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 2,
+          "word_id": 2,
+          "pos": "v",
+          "definition_en": "cause something to happen",
+          "definition_zh": "使得",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "make",
+          "role": "support"
+        },
+        {
+          "id": 3,
+          "word_id": 3,
+          "pos": "n",
+          "definition_en": "a reasonable meaning",
+          "definition_zh": "道理",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "sense",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 3,
+          "chunk_id": 3,
+          "intent_id": 2,
+          "scenario_id": 1,
+          "example": "It makes sense to me now.",
+          "intent": "表示同意",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "expression": "Take your time.",
+      "meaning_zh": "慢慢来。",
+      "pattern": "Take your time.",
+      "slots": [],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 4,
+          "word_id": 4,
+          "pos": "v",
+          "definition_en": "use an amount of time",
+          "definition_zh": "花费",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "take",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 4,
+          "chunk_id": 4,
+          "intent_id": 3,
+          "scenario_id": 1,
+          "example": "Take your time. We can wait.",
+          "intent": "提出建议",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "expression": "Give me a minute.",
+      "meaning_zh": "给我一分钟。",
+      "pattern": "Give {person} {time}.",
+      "slots": [
+        "person",
+        "time"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 5,
+          "word_id": 5,
+          "pos": "v",
+          "definition_en": "provide something",
+          "definition_zh": "给予",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "give",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 5,
+          "chunk_id": 5,
+          "intent_id": 4,
+          "scenario_id": 2,
+          "example": "Give me a minute to check.",
+          "intent": "请求帮助",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "expression": "Let’s go.",
+      "meaning_zh": "我们走吧。",
+      "pattern": "Let’s go {place}.",
+      "slots": [
+        "place"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 6,
+          "word_id": 6,
+          "pos": "v",
+          "definition_en": "move to a place",
+          "definition_zh": "去",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "go",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 6,
+          "chunk_id": 6,
+          "intent_id": 3,
+          "scenario_id": 3,
+          "example": "Let’s go home.",
+          "intent": "提出建议",
+          "scenario": "出行"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "expression": "Come with me.",
+      "meaning_zh": "跟我来。",
+      "pattern": "Come with {person}.",
+      "slots": [
+        "person"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 7,
+          "word_id": 7,
+          "pos": "v",
+          "definition_en": "move toward someone",
+          "definition_zh": "来",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "come",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 7,
+          "chunk_id": 7,
+          "intent_id": 3,
+          "scenario_id": 3,
+          "example": "Come with me to the station.",
+          "intent": "提出建议",
+          "scenario": "出行"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "expression": "I don’t know yet.",
+      "meaning_zh": "我还不知道。",
+      "pattern": "I don’t know {detail} yet.",
+      "slots": [
+        "detail"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 8,
+          "word_id": 8,
+          "pos": "v",
+          "definition_en": "have information",
+          "definition_zh": "知道",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "know",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 8,
+          "chunk_id": 8,
+          "intent_id": 5,
+          "scenario_id": 2,
+          "example": "I don’t know the answer yet.",
+          "intent": "表达不确定",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "expression": "I think so.",
+      "meaning_zh": "我想是的。",
+      "pattern": "I think {clause}.",
+      "slots": [
+        "clause"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 9,
+          "word_id": 9,
+          "pos": "v",
+          "definition_en": "have an opinion",
+          "definition_zh": "认为",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "think",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 9,
+          "chunk_id": 9,
+          "intent_id": 6,
+          "scenario_id": 1,
+          "example": "I think we should leave.",
+          "intent": "表达观点",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "expression": "I want to try.",
+      "meaning_zh": "我想试试。",
+      "pattern": "I want to {verb}.",
+      "slots": [
+        "verb"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 10,
+          "word_id": 10,
+          "pos": "v",
+          "definition_en": "wish for something",
+          "definition_zh": "想要",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "want",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 10,
+          "chunk_id": 10,
+          "intent_id": 7,
+          "scenario_id": 1,
+          "example": "I want to try again.",
+          "intent": "表达意愿",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "expression": "I need some help.",
+      "meaning_zh": "我需要一些帮助。",
+      "pattern": "I need {thing}.",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 11,
+          "word_id": 11,
+          "pos": "v",
+          "definition_en": "require something",
+          "definition_zh": "需要",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "need",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 11,
+          "chunk_id": 11,
+          "intent_id": 4,
+          "scenario_id": 2,
+          "example": "I need some help with this task.",
+          "intent": "请求帮助",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "expression": "I’m working on it.",
+      "meaning_zh": "我正在处理。",
+      "pattern": "I’m working on {task}.",
+      "slots": [
+        "task"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 12,
+          "word_id": 12,
+          "pos": "v",
+          "definition_en": "spend effort on a task",
+          "definition_zh": "处理；工作",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "work",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 12,
+          "chunk_id": 12,
+          "intent_id": 8,
+          "scenario_id": 2,
+          "example": "I’m working on the report.",
+          "intent": "描述进展",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "expression": "Could you help me?",
+      "meaning_zh": "你能帮我吗？",
+      "pattern": "Could you help me with {thing}?",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 13,
+          "word_id": 13,
+          "pos": "v",
+          "definition_en": "make something easier",
+          "definition_zh": "帮助",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "help",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 13,
+          "chunk_id": 13,
+          "intent_id": 4,
+          "scenario_id": 1,
+          "example": "Could you help me with this bag?",
+          "intent": "请求帮助",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "expression": "Do you have time?",
+      "meaning_zh": "你有时间吗？",
+      "pattern": "Do you have time to {verb}?",
+      "slots": [
+        "verb"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 14,
+          "word_id": 14,
+          "pos": "n",
+          "definition_en": "a period available",
+          "definition_zh": "时间",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "time",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 14,
+          "chunk_id": 14,
+          "intent_id": 9,
+          "scenario_id": 2,
+          "example": "Do you have time to talk?",
+          "intent": "询问信息",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "expression": "That sounds good.",
+      "meaning_zh": "听起来不错。",
+      "pattern": "{idea} sounds good.",
+      "slots": [
+        "idea"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 15,
+          "word_id": 15,
+          "pos": "adj",
+          "definition_en": "of high quality",
+          "definition_zh": "好的",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "good",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 15,
+          "chunk_id": 15,
+          "intent_id": 2,
+          "scenario_id": 1,
+          "example": "Dinner at six sounds good.",
+          "intent": "表示同意",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "expression": "I’m not sure.",
+      "meaning_zh": "我不确定。",
+      "pattern": "I’m not sure if {clause}.",
+      "slots": [
+        "clause"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 16,
+          "word_id": 16,
+          "pos": "adj",
+          "definition_en": "certain",
+          "definition_zh": "确定的",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "sure",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 16,
+          "chunk_id": 16,
+          "intent_id": 5,
+          "scenario_id": 2,
+          "example": "I’m not sure if it will work.",
+          "intent": "表达不确定",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "expression": "What do you mean?",
+      "meaning_zh": "你是什么意思？",
+      "pattern": "What do you mean by {thing}?",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 17,
+          "word_id": 17,
+          "pos": "v",
+          "definition_en": "intend to express",
+          "definition_zh": "意思是",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "mean",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 17,
+          "chunk_id": 17,
+          "intent_id": 1,
+          "scenario_id": 1,
+          "example": "What do you mean by that?",
+          "intent": "确认理解",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "expression": "What I’m trying to say is…",
+      "meaning_zh": "我想说的是……",
+      "pattern": "What I’m trying to say is {clause}.",
+      "slots": [
+        "clause"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 18,
+          "word_id": 18,
+          "pos": "v",
+          "definition_en": "express in words",
+          "definition_zh": "说",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "say",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 18,
+          "chunk_id": 18,
+          "intent_id": 10,
+          "scenario_id": 2,
+          "example": "What I’m trying to say is we need more time.",
+          "intent": "补充说明",
+          "scenario": "工作"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "expression": "Let me look.",
+      "meaning_zh": "让我看看。",
+      "pattern": "Let me look at {thing}.",
+      "slots": [
+        "thing"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 19,
+          "word_id": 19,
+          "pos": "v",
+          "definition_en": "direct attention",
+          "definition_zh": "看",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "look",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 19,
+          "chunk_id": 19,
+          "intent_id": 3,
+          "scenario_id": 1,
+          "example": "Let me look at the map.",
+          "intent": "提出建议",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "expression": "I feel better.",
+      "meaning_zh": "我感觉好些了。",
+      "pattern": "I feel {adjective}.",
+      "slots": [
+        "adjective"
+      ],
+      "usage_notes": "按例句理解语境；替换时注意语法。",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 20,
+          "word_id": 20,
+          "pos": "v",
+          "definition_en": "experience an emotion or state",
+          "definition_zh": "感觉",
+          "sense_rank": 1,
+          "source": "原创示例，待审核",
+          "lemma": "feel",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 20,
+          "chunk_id": 20,
+          "intent_id": 11,
+          "scenario_id": 1,
+          "example": "I feel better today.",
+          "intent": "描述状态",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "expression": "get a message",
+      "meaning_zh": "收到消息",
+      "pattern": "get a message",
+      "slots": [],
+      "usage_notes": "",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 21,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "receive",
+          "definition_zh": "获得",
+          "sense_rank": 2,
+          "source": "原创示例，待审核",
+          "lemma": "get",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 21,
+          "chunk_id": 21,
+          "intent_id": 1,
+          "scenario_id": 1,
+          "example": "I got a message.",
+          "intent": "确认理解",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "expression": "get better",
+      "meaning_zh": "变好",
+      "pattern": "get better",
+      "slots": [],
+      "usage_notes": "",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 22,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "become",
+          "definition_zh": "变得",
+          "sense_rank": 2,
+          "source": "原创示例，待审核",
+          "lemma": "get",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 22,
+          "chunk_id": 22,
+          "intent_id": 1,
+          "scenario_id": 1,
+          "example": "I hope you get better soon.",
+          "intent": "确认理解",
+          "scenario": "日常"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "expression": "get there",
+      "meaning_zh": "到达那里",
+      "pattern": "get there",
+      "slots": [],
+      "usage_notes": "",
+      "version": 1,
+      "updated_at": "2026-10-17T17:56:36+00:00",
+      "source": "原创示例，待审核",
+      "senses": [
+        {
+          "id": 23,
+          "word_id": 1,
+          "pos": "v",
+          "definition_en": "arrive",
+          "definition_zh": "到达",
+          "sense_rank": 2,
+          "source": "原创示例，待审核",
+          "lemma": "get",
+          "role": "core"
+        }
+      ],
+      "contexts": [
+        {
+          "id": 23,
+          "chunk_id": 23,
+          "intent_id": 1,
+          "scenario_id": 1,
+          "example": "How do I get there?",
+          "intent": "确认理解",
+          "scenario": "日常"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "intents": [
+      {
+        "id": 1,
+        "name": "确认理解",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "表示同意",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "提出建议",
+        "description": ""
+      },
+      {
+        "id": 4,
+        "name": "请求帮助",
+        "description": ""
+      },
+      {
+        "id": 5,
+        "name": "表达不确定",
+        "description": ""
+      },
+      {
+        "id": 6,
+        "name": "表达观点",
+        "description": ""
+      },
+      {
+        "id": 7,
+        "name": "表达意愿",
+        "description": ""
+      },
+      {
+        "id": 8,
+        "name": "描述进展",
+        "description": ""
+      },
+      {
+        "id": 9,
+        "name": "询问信息",
+        "description": ""
+      },
+      {
+        "id": 10,
+        "name": "补充说明",
+        "description": ""
+      },
+      {
+        "id": 11,
+        "name": "描述状态",
+        "description": ""
+      }
+    ],
+    "scenarios": [
+      {
+        "id": 1,
+        "name": "日常",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "工作",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "出行",
+        "description": ""
+      }
+    ]
+  }
+}

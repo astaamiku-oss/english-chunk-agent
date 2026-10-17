@@ -126,3 +126,11 @@ python3 -m unittest discover -s tests -v
 已通过实际本地端口 HTTP 测试，并保留无需 socket 的 Handler 测试。另用本地 Chrome 在 1440×1000 桌面尺寸与 390×844 手机尺寸检查四个页面无横向溢出，完成揭示答案、评分、继续练习流程，无 JavaScript 异常。手机尺寸验证为浏览器模拟，未使用实体手机。
 
 页面预览截图：[桌面首页](screenshots/desktop-home.png)、[桌面练习](screenshots/desktop-exercise.png)、[手机首页](screenshots/mobile-home.png)、[手机练习](screenshots/mobile-exercise.png)。参考站点访问工具返回不可访问，因此视觉参考来自用户提供的截图，未声称复刻原站动效。
+
+## 免费静态版（GitHub Pages）
+
+访问 https://astaamiku-oss.github.io/english-chunk-agent/ 。`docs/` 是纯前端版本，沿用 `static/` 最新界面，词库来自全新种子数据库，不包含本地学习记录。无需后端、注册账号或绑卡。
+
+练习回答、备注、自评、进度和间隔复习均在浏览器内运行，保存到 localStorage（键 `english-chunk-agent:v1`）。数据随浏览器与设备独立，清除站点数据会丢失记录；无痕模式可能在关闭后清除。复习规则与 Python 版一致：评分 0 为 10 分钟，其余首次为 1 天，之后分别按 1.2 / 2 / 2.5 倍延长。
+
+更新种子词库或界面后运行 `python3 tools/build_pages.py`，提交 `docs/` 并推送 main 即可发布。浏览器存储实现位于 `docs/store.js`。原 Python 后端与 `static/` 保持独立，可继续按原方式运行。

@@ -1,0 +1,193 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#171719;background:#fafafa;line-height:1.65;font-synthesis:none;--ink:#171719;--muted:#85858e;--line:#e8e8ec;--accent:#171719;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+button,input,select,textarea{font:inherit;color:inherit}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button{border:1px solid var(--line);border-radius:999px;background:white;padding:10px 20px;min-height:44px;cursor:pointer;transition:background .2s,color .2s,transform .3s var(--ease),box-shadow .3s}
+button:hover{background:#f1f1f3;box-shadow:0 5px 15px #17171908;transform:translateY(-2px)}
+button:active{transform:scale(.97);box-shadow:none}
+button:disabled{opacity:.45;cursor:wait;transform:none}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #535362;outline-offset:4px}
+header{max-width:1440px;margin:auto;padding:28px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand-wrap{position:relative;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;border:0;box-shadow:0 3px 20px #18181b06;padding:10px 16px}
+.brand-mark{display:grid;place-items:center;background:#171719;color:white;border-radius:8px;width:28px;height:28px;font-size:17px}
+.brand strong{font-size:16px;font-weight:650}
+.brand-en{font-size:10px;font-weight:500;letter-spacing:.1em;margin-left:4px}
+.chevron{margin-left:10px;transition:transform .3s}
+.brand[aria-expanded=true] .chevron{transform:rotate(180deg)}
+.header-note{font-size:11px;color:var(--muted);letter-spacing:.05em}
+.header-note i,.status-dot{display:inline-block;width:5px;height:5px;background:#171719;border-radius:50%;margin-right:8px;vertical-align:middle}
+nav{position:relative;display:grid;grid-template-columns:repeat(4,1fr);padding:4px;background:#f0f0f2;border:1px solid #e8e8ec;border-radius:999px;--nav-index:0}
+nav button{position:relative;background:transparent;border:0;z-index:1;font-size:12px;color:#71717a;min-height:36px;padding:8px 18px;white-space:nowrap}
+nav button:hover{box-shadow:none;transform:none;background:#e6e6e960}
+nav button.active{background:transparent;color:white}
+.nav-indicator{position:absolute;top:4px;bottom:4px;left:4px;width:calc((100% - 8px)/4);border-radius:999px;background:linear-gradient(135deg,#303034,#111113);box-shadow:0 3px 8px #0002;transform:translateX(calc(var(--nav-index)*100%));transition:transform .3s var(--ease)}
+main{max-width:1280px;min-height:76vh;margin:auto;padding:38px 56px 60px}
+h1{font-size:42px;font-weight:500;letter-spacing:-.045em;line-height:1.2;margin:16px 0 22px}
+h2{font-size:20px;font-weight:550;letter-spacing:-.03em}
+p{margin:10px 0}
+small,.muted{color:var(--muted)}
+a{color:var(--ink)}
+.library-heading{font-size:10px;color:#92929d;letter-spacing:.14em;text-transform:uppercase}
+.practice-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:80px;min-height:600px;margin:10px 0 70px}
+.learning-rail{padding:20px 32px 20px 0;border-right:1px solid var(--line);display:flex;flex-direction:column}
+.rail-active{margin:42px 0 28px}
+.rail-active>span{font-size:10px;color:#92929d;letter-spacing:.1em}
+.rail-active strong{display:block;font-size:38px;letter-spacing:-.06em;font-weight:550;line-height:1.7}
+.rail-dot{color:#a3a3ad}
+.rail-active small{font-size:11px;color:#909099}
+.learning-rail>button{display:flex;justify-content:space-between;align-items:center;margin:4px 0;padding:13px 12px;border-color:transparent;background:transparent;color:#888891;text-align:left}
+.learning-rail>button span{font-size:11px;color:#ababaf}
+.learning-rail>button:hover{color:#171719;background:white;transform:translateX(4px)}
+.rail-bottom{margin-top:auto;padding-top:55px}
+.orbit{display:grid;place-items:center;width:48px;height:48px;border:1px solid #d6d6df;border-radius:50%;font-size:23px}
+.rail-bottom p{font-size:13px;color:#85858e;margin:16px 0}
+.rail-bottom small{font-size:8px;letter-spacing:.15em;color:#b4b4be}
+.practice-dashboard{padding-top:18px}
+.mode-label{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;background:white;padding:7px 14px;font-size:11px;margin:0 0 30px;color:#60606b}
+.mode-label>span:first-child{color:#242429}
+.mode-divider{color:#c7c7d0}
+.practice-dashboard h1{font-size:clamp(46px,5.2vw,72px);line-height:1.22;font-weight:500;margin:20px 0 24px;letter-spacing:-.065em}
+.title-dot{color:#c8c8ce}
+.practice-intro{font-size:13px;line-height:1.9;color:#85858e}
+.dashboard-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:36px;padding:24px 0}
+.dashboard-stats>div>span{display:block;font-size:10px;color:#92929d;letter-spacing:.06em}
+.dashboard-stats strong{display:block;font-size:44px;font-weight:400;letter-spacing:-.05em;margin-top:10px;line-height:1.2;font-variant-numeric:tabular-nums}
+.dashboard-stats small{font-size:12px;letter-spacing:0;color:#a3a3af}
+.session-banner{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:38px;font-size:12px}
+.session-banner small{display:block;font-size:10px;margin-top:6px}
+.session-banner button,.primary{background:#171719;color:white;border-color:#171719;box-shadow:0 5px 16px #17171914;font-size:13px;padding:13px 24px;white-space:nowrap}
+.session-banner button:hover,.primary:hover{background:#333338;box-shadow:0 8px 20px #17171920}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;border-top:1px solid var(--line);padding-top:30px;margin-bottom:24px}
+.section-heading h2{margin:8px 0 0}
+.section-heading>.muted{font-size:11px}
+.practice-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.practice-choices button{text-align:left;min-height:94px;padding:20px 22px;border-radius:14px;position:relative;font-size:14px}
+.practice-choices button::after{content:'↗';position:absolute;right:16px;top:16px;color:#b9b9c2;transition:transform .3s}
+.practice-choices button:hover::after{transform:translate(2px,-2px);color:#171719}
+.practice-choices button small{display:block;font-size:10px;margin-top:9px;letter-spacing:.03em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;margin:18px 0;overflow-wrap:anywhere}
+.grid .card{margin:0}
+.metric{font-size:40px;font-weight:400;margin-top:14px;letter-spacing:-.04em}
+.tag{display:inline-block;font-size:10px;color:#71717e;background:#f3f3f6;padding:4px 10px;border-radius:999px;margin:0 6px 5px 0}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+input,select,textarea{border:1px solid var(--line);border-radius:12px;background:white;padding:12px 15px;max-width:100%;outline:none;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{border-color:#8b8b99;box-shadow:0 0 0 3px #17171906}
+input{min-width:0}
+textarea{display:block;resize:vertical;width:100%;margin:10px 0 16px;min-height:72px}
+label{display:block;font-size:12px;color:#777782;margin:10px 0}
+.filters{display:flex;gap:12px;align-items:end;flex-wrap:wrap;padding:15px 0}
+.filters label{flex:1;min-width:140px}
+.filters input,.filters select{display:block;width:100%;margin-top:7px}
+.word-list{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.word-list button{min-width:108px;font-size:18px;padding:14px 22px}
+.exercise{position:relative;max-width:800px;margin:0 auto 30px;text-align:center;padding:60px 60px 40px;min-height:650px}
+.exercise-back{position:absolute;top:0;left:0;font-size:12px;padding:7px 16px;min-height:36px}
+.exercise .eyebrow{font-size:10px;letter-spacing:.18em;color:#9a9aa6;margin-top:20px}
+.exercise h1{font-size:13px;font-weight:400;color:#92929d;margin:22px 0 35px;letter-spacing:0}
+.exercise .prompt{font-size:clamp(30px,4vw,48px);font-weight:500;line-height:1.5;letter-spacing:-.04em;margin:20px 0 28px}
+.exercise .hint{font-size:11px;color:#9a9aa6}
+.exercise select{font-size:11px;border-radius:999px;padding:5px 12px;min-height:32px;background:#f1f1f4;border:0}
+.exercise>label{margin-top:20px}
+.exercise textarea{text-align:center;background:transparent;border-width:0 0 1px;border-radius:0;box-shadow:none}
+.exercise textarea::placeholder{color:#b0b0ba;font-size:12px}
+.exercise .notes{text-align:left;margin:14px 0 30px}
+.notes summary{cursor:pointer;color:#92929d;font-size:11px}
+.exercise .notes textarea{text-align:left;background:white;border:1px solid var(--line);border-radius:12px}
+.exercise .primary{min-width:190px}
+.exercise .answer-card{white-space:pre-line;text-align:left;background:#f3f5f3;color:#374a3d;border-color:#e0e7e1;animation:answer-in .45s var(--ease)}
+.exercise #reveal>p{font-size:11px;color:#90909b}
+.exercise #grades{display:grid;grid-template-columns:repeat(4,1fr);margin-top:24px;gap:8px}
+.exercise #grades button{font-size:12px;padding:10px 8px}
+.exercise #grades button:first-child{color:#916a4c}
+.exercise #grades button:last-child{color:#48614e;border-color:#d7e1d9;background:#f0f4f1}
+.success-symbol{font-size:28px;background:#edf2ed;color:#49634e;width:68px;height:68px;display:grid;place-items:center;border-radius:50%;margin:60px auto 0;animation:answer-in .5s var(--ease)}
+.exercise .actions{justify-content:center;margin-top:30px}
+#error{color:#9c4039;background:#fff0ed;border-radius:12px;padding:10px 15px;font-size:13px}
+#error:empty{display:none}
+#content{animation:enter .65s var(--ease)}
+#content>button,#list>button{margin:5px}
+#content>p:not(.library-heading){font-size:13px;color:#85858e}
+table{width:100%;border-collapse:collapse;font-size:12px}
+td,th{text-align:left;padding:14px 8px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+footer{max-width:1360px;margin:auto;padding:25px 40px 30px;display:flex;justify-content:space-between;gap:16px;font-size:9px;color:#aaaab4;letter-spacing:.04em}
+.site-menu{position:absolute;top:62px;left:0;width:310px;padding:26px;background:#ffffffed;backdrop-filter:blur(20px);border:1px solid #fff;border-radius:20px;box-shadow:0 18px 60px #1717191a;visibility:hidden;opacity:0;transform:translateY(-8px) scale(.98);transform-origin:top left;transition:opacity .25s,transform .35s var(--ease),visibility .35s}
+.site-menu.open{visibility:visible;opacity:1;transform:none}
+.site-menu h2{font-size:18px;margin-bottom:22px}
+.site-menu button{display:flex;justify-content:space-between;width:100%;border:0;border-radius:10px;background:transparent;font-size:13px;text-align:left;margin:3px 0}
+.site-menu button:hover,.site-menu button.active{background:#f1f1f4}
+.menu-note{border-top:1px solid var(--line);padding-top:18px;font-size:11px;color:#92929d}
+.skip-link{position:fixed;left:20px;top:-100px;z-index:100;background:#171719;color:white;padding:10px 20px;border-radius:12px}
+.skip-link:focus{top:12px}
+@keyframes enter{from{opacity:0;transform:translateY(16px)}
+to{opacity:1;transform:translateY(0)}
+}
+@keyframes answer-in{from{opacity:0;transform:translateY(12px) scale(.98)}
+to{opacity:1;transform:none}
+}
+@media(min-width:900px){#list:has(>.card){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#list>.card{margin:0}
+}
+@media(max-width:1050px){.header-note{display:none}
+.practice-layout{grid-template-columns:210px minmax(0,1fr);gap:45px}
+main{padding:30px 36px 50px}
+.rail-active strong{font-size:32px}
+.session-banner{align-items:start;flex-direction:column}
+}
+@media(max-width:700px){header{padding:18px 20px;flex-wrap:wrap;gap:20px}
+.brand{padding:8px 12px}
+.brand-en{font-size:9px}
+.brand-mark{width:24px;height:24px;font-size:15px}
+nav{width:100%}
+nav button{font-size:11px;padding:8px 5px;min-height:36px}
+main{padding:20px 22px 40px}
+.practice-layout{display:flex;flex-direction:column;gap:28px;margin:0 0 48px;min-height:0}
+.learning-rail{padding:0;border:0;display:grid;grid-template-columns:1.4fr 1fr 1fr;align-items:center;gap:6px}
+.learning-rail>.library-heading,.rail-bottom,.rail-active>span,.rail-active small{display:none}
+.rail-active{margin:0}
+.rail-active strong{font-size:23px;white-space:nowrap;letter-spacing:-.05em}
+.learning-rail>button{font-size:12px;padding:8px 6px;min-height:42px}
+.learning-rail>button span:first-child{display:none}
+.learning-rail>button span:last-child{font-size:13px}
+.practice-dashboard{padding:0}
+.mode-label{margin-bottom:22px;font-size:10px;padding:6px 12px}
+.practice-dashboard h1{font-size:49px;margin:18px 0 20px}
+.practice-dashboard>.library-heading{font-size:8px}
+.practice-intro{font-size:12px;line-height:1.9}
+.dashboard-stats{margin-top:28px;padding:21px 0}
+.dashboard-stats strong{font-size:36px}
+.dashboard-stats small{font-size:10px}
+.dashboard-stats>div>span{font-size:9px}
+.session-banner{flex-direction:row;align-items:center;margin-top:22px;font-size:10px;gap:8px}
+.session-banner small{max-width:135px;font-size:9px}
+.session-banner button{font-size:11px;padding:12px 17px}
+.section-heading{padding-top:22px;margin-bottom:18px}
+.section-heading h2{font-size:18px}
+.section-heading>.muted{display:none}
+.practice-choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.practice-choices button{font-size:12px;padding:17px 14px;min-height:93px}
+.practice-choices button::after{right:10px;top:10px;font-size:12px}
+.practice-choices button small{font-size:9px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.grid .card{padding:17px;font-size:11px}
+.metric{font-size:30px}
+.card{padding:20px}
+.filters label{min-width:calc(50% - 12px)}
+h1{font-size:32px}
+.exercise{padding:65px 0 25px;min-height:620px}
+.exercise .prompt{font-size:31px;margin:22px 0 28px}
+.exercise h1{font-size:11px}
+.exercise #grades{gap:6px}
+.exercise #grades button{font-size:11px;padding:10px 4px}
+.exercise .answer-card{font-size:13px}
+.word-list{gap:9px}
+.word-list button{min-width:88px;font-size:16px;padding:10px 16px}
+table{font-size:10px}
+td,th{padding:10px 4px}
+footer{padding:20px 22px 30px;flex-direction:column;gap:7px;font-size:8px}
+.site-menu{width:min(310px,calc(100vw - 40px))}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
