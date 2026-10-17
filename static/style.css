@@ -223,3 +223,10 @@ button,a{touch-action:manipulation}
 .ability-track{height:4px;border-radius:4px;background:#ededf0;overflow:hidden}
 .ability-track span{display:block;height:100%;background:#38383e;border-radius:4px}
 @media(prefers-reduced-motion:reduce){.loader,.skeleton{animation:none}}
+
+/* Native speech controls */
+.voice-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:20px;font-size:13px;color:var(--muted)}
+.voice-toolbar label{display:flex;align-items:center;gap:10px}.voice-toolbar select{width:auto;margin:0;border-radius:999px;padding:8px 14px}
+.speak-button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:8px;margin:0 4px;vertical-align:middle;font-size:17px;letter-spacing:normal}
+.voice-practice{margin:20px 0;padding:18px;border:1px solid var(--line);border-radius:18px;background:#fafafa}.voice-practice p{overflow-wrap:anywhere;font-size:14px}.voice-practice small{display:block;font-size:12px}.mic-button{font-size:14px}.word-with-voice{display:inline-flex}.answer-card p{white-space:normal}
+@media(max-width:600px){.voice-toolbar{gap:8px}.voice-status{flex-basis:100%}.voice-practice{padding:14px}}
