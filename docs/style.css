@@ -207,3 +207,19 @@ button,a{touch-action:manipulation}
 @media(pointer:coarse){.gesture-hint{display:block}.exercise{touch-action:pan-y}}
 @media(max-width:600px){.exercise{padding-top:55px}.stage-meta{font-size:10px}.stage-track{margin-bottom:24px}.exercise .prompt{margin-top:16px}.exercise .notes{margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){.exercise-enter,.exercise .answer-card{animation:none}.stage-track span{transition:none}}
+
+.loading-state,.empty-state{text-align:center;padding:70px 20px;min-height:280px}
+.loading-state p,.empty-state p{font-size:12px;color:#85858e}
+.empty-state h2{font-size:20px;font-weight:500;margin:20px 0 10px}
+.empty-symbol{display:inline-grid;place-items:center;width:52px;height:52px;border:1px solid var(--line);border-radius:50%;font-size:25px;color:#85858e}
+.loader{display:inline-block;width:30px;height:30px;border:2px solid var(--line);border-top-color:#171719;border-radius:50%;animation:loader-spin 1s linear infinite}
+.skeleton{height:10px;max-width:300px;margin:25px auto 0;border-radius:6px;background:#ededf0;animation:loading-pulse 2s cubic-bezier(.4,0,.6,1) infinite}
+.skeleton.short{max-width:190px;margin-top:12px}
+@keyframes loader-spin{to{transform:rotate(360deg)}}
+@keyframes loading-pulse{50%{opacity:.45}}
+.ability-row{max-width:650px;margin:22px 0}
+.ability-row p{display:flex;justify-content:space-between;gap:16px;font-size:12px}
+.ability-row p span:last-child{color:#85858e;font-variant-numeric:tabular-nums}
+.ability-track{height:4px;border-radius:4px;background:#ededf0;overflow:hidden}
+.ability-track span{display:block;height:100%;background:#38383e;border-radius:4px}
+@media(prefers-reduced-motion:reduce){.loader,.skeleton{animation:none}}
