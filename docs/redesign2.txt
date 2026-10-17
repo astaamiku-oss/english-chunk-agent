@@ -1,0 +1,26 @@
+词灵 Next 第二轮交互研究 · 2026-10-18
+基于 /workspace/projects/redesign/ref/design-notes.md 和 a5b380f；当前项目还包含 1347d1f 的 GitHub Pages 版。
+使用 agent-browser --session clingword，只读 DOM、公开静态 JS/CSS 和截图；未作答、切词书、改设置、购买或提交反馈。保留浏览器会话。
+
+新证据：
+clingai-study.js?v=clingai-study-20260919-148
+MOTION enter=.42s exit=.18s move=.36s；easeEnter=power3.out、easeExit=power2.in、easeMove=power2.inOut。
+STAGE_MOTION enter=.46s exit=.2s；easeEnter=power4.out、easeExit=power3.in。
+Flip.from 用于布局位置变换，不能据此推断 3D 卡片翻面；本次未实际提交答案来观察后续流程。
+学习页进度条 transform scaleX、左侧原点、600ms cubic-bezier(.22,1,.36,1)。
+常规按钮颜色160ms ease-out、按压140ms ease-out；词序拖动区域 touch-action:none，其余按钮 manipulation。
+反馈浮在任务底部，以绝对定位避免改变任务和操作区几何尺寸；反馈表面变化180ms cubic-bezier(.2,0,0,1)。
+加载 spinner 1s linear，标签2s cubic-bezier(.4,0,.6,1) 呼吸；偏好减少动态有独立处理。
+首页将总词数/已掌握、今日待复习/新词、连续天数、精确分数与百分比、30日趋势分别呈现，避免把今日活动和长期掌握混为一谈。
+
+实现：
+3637fd1：三阶段练习进度（回忆/对照/记录），本轮完成计数，460ms入场、420ms答案揭示，600ms进度条，答案键盘焦点，左滑揭示且不触发评分，保留按钮与所有原表单。
+d8f7f04：加载骨架、失败重试、搜索空状态、学习足迹空状态、自评能力条，串行处理快速导航。
+static 与 docs 通过 tools/build_pages.py 同步；docs 保留 localStorage API，不依赖后端。
+
+验证：
+6 项 unittest 通过；static/app.js、docs/app.js、docs/store.js Node语法通过；git diff --check通过。
+http://127.0.0.1:8892/ 直接托管 docs：输入 I get it.、揭示、自评2、继续下一题成功，计数增加，学习足迹显示记录。
+390x844 触摸 PointerEvent 左滑揭示成功；桌面1440x900与手机 document.scrollWidth 无溢出。
+空搜索、延迟加载、模拟离线失败与恢复重试均通过；浏览器 errors 无输出。
+截图 ref/ 为参考站，after/ 为改版；答案截图等待动画完成后保存。
